@@ -112,11 +112,7 @@ My Gimp skills are not the best so this is not very precise.
 
 <img src="/examples/02.png" width="900"></img>
 
-<img src="/examples/03.png" width="900"></img>
-
-<img src="/examples/05.png" width="900"></img>
-
-<img src="/examples/06.png" width="900"></img>
+<img src="/examples/30.png" width="900"></img>
 
 <img src="/examples/08.png" width="900"></img>
 
@@ -134,6 +130,10 @@ My Gimp skills are not the best so this is not very precise.
 
 <img src="/examples/17.png" width="900"></img>
 
+<img src="/examples/05.png" width="900"></img>
+
+<img src="/examples/06.png" width="900"></img>
+
 <img src="/examples/18.png" width="900"></img>
 
 <img src="/examples/19.png" width="900"></img>
@@ -147,8 +147,6 @@ My Gimp skills are not the best so this is not very precise.
 <img src="/examples/27.png" width="900"></img>
 
 <img src="/examples/28.png" width="900"></img>
-
-<img src="/examples/30.png" width="900"></img>
 
 <img src="/examples/32.png" width="900"></img>
 
