@@ -10,7 +10,7 @@ You can play around with the resulting patterns by moving the cursor and pressin
 
 > Be careful if you suffer from Epilepsia!
 
-**Demo: **[honeycomb-js](fgrimme.github.com)
+**Demo:** [honeycomb-js](fgrimme.github.com)
 
 
 #How it works
