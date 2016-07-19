@@ -2,7 +2,7 @@
 
 #honeycomb-js 
 
-A bee came in my room today and told me to make honeycombs.
+A bee came in my room today. So I decided to make honeycombs.
 
 #Demo
 
@@ -56,7 +56,7 @@ x += RADIUS * 3
 
 **Vertical Tesselation**
 
-The position on the y-axis is caculated by the square root of three times half the radius (angle bisector in equilateral trianlge).
+The position on the y-axis is caculated by the square root of half the radius times three (angle bisector in equilateral trianlge).
 
 <img src="source-images/readme/04.png" width="200"></img>
 
@@ -108,13 +108,13 @@ My Gimp skills are not the best so this is not very precise.
 
 #Pattern Gallery
 
-<img src="/backgrounds/05.png" width="900"></img>
+<img src="/examples/05.png" width="900"></img>
 
-<img src="/backgrounds/12.png" width="900"></img>
+<img src="/examples/12.png" width="900"></img>
 
-<img src="/backgrounds/02.png" width="900"></img>
+<img src="/examples/02.png" width="900"></img>
 
-<img src="/backgrounds/03.png" width="900"></img>
+<img src="/examples/03.png" width="900"></img>
 
 
 
