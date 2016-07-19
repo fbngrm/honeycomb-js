@@ -134,9 +134,7 @@ My Gimp skills are not the best so this is not very precise.
 
 <img src="/examples/17.png" width="900"></img>
 
-<img src="/examples/14.png" width="900"></img>
-
-<img src="/examples/14.png" width="900"></img>
+<img src="/examples/18.png" width="900"></img>
 
 <img src="/examples/19.png" width="900"></img>
 
