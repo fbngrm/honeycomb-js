@@ -1,4 +1,6 @@
-#honeycomb-js <img src="source-images/readme/bee.png" ></img>
+<img src="source-images/readme/bee.png" ></img>
+
+#honeycomb-js 
 
 A bee came in my room today and told me to make honeycombs.
 
