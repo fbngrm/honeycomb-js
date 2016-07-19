@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<meta name="Generator" content="Processing" />
+		<style type="text/css">
+            body {
+                margin: 0;
+                padding: 0;
+            }
+			canvas { 
+				display: block; 
+				outline: 0px; 
+				margin: auto;
+			}
+		</style>
+		<!--[if lt IE 9]>
+			<script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
+		<![endif]-->
+		<script src="js/processing.api.js"></script>
+
+	</head>
+	<body>
+		<div id="content">
+			<div>
+				<canvas id="honeycomb" width="100%" height="100%">
+					<p>Your browser does not support the canvas tag.</p>
+					<!-- Note: you can put any alternative content here. -->
+				</canvas>
+				<noscript>
+					<p>JavaScript is required to view the contents of this page.</p>
+				</noscript>
+	    	</div>
+		</div>
+		<script>
+		  var mySketch = (function($p) {
+
+		    var img = null;
+		    var radius = 200;
+		    var ANGLE = $p.TWO_PI / 6;
+		    var CENTER_HEXAGON = new $p.PVector(0, 0);
+		    var firstPoint = null;
+
+		    var MIN_VEL = 0.0;
+		    var MAX_VEL = 2;
+
+		    var cellSize = $p.sqrt(3) * (radius / 2);
+		    var colStep = 2 * cellSize;
+		    var rowStep = 1.5 * radius - 1;
+		    var velocity = 0.05;
+		    var tesselate = false;
+		    var showImage = false;
+		    var debug = false;
+		    var circAngle = 0;
+		    var direction = 1;
+		    var circleCenter = null;
+
+		    var posX = 0;
+		    var posY = 0;
+		    var move = false;
+
+		    function setup() {
+		        $p.size(1920, 1250, $p.OPENGL);
+		        img = $p.loadImage("source-images/07.jpg");
+		        $p.noStroke();
+		    }
+		    $p.setup = setup;
+		    setup = setup.bind($p);
+
+		    function draw() {
+		        cellSize = $p.sqrt(3) * (radius / 2);
+		        colStep = 2 * cellSize;
+		        rowStep = 1.5 * radius - 1;
+
+		        if (showImage) {
+		            $p.image(img, 0, 0);
+		            $p.stroke(255, 0, 0);
+		            $p.beginShape();
+		            $p.vertex($p.mouseX, $p.mouseY);
+		            $p.vertex($p.mouseX + radius, $p.mouseY + radius);
+		            $p.vertex($p.mouseX - radius, $p.mouseY + radius);
+		            $p.vertex($p.mouseX, $p.mouseY);
+		            $p.endShape();
+		            $p.noStroke();
+		        } else if (move) {
+		            circleCenter = new $p.PVector($p.mouseX, $p.mouseY);
+		            moveCircular();
+		            drawColumns();
+		        } else if (tesselate) {
+		            if (debug) {
+		                $p.stroke(255, 0, 0);
+		            } else {
+		                $p.noStroke();
+		            }
+
+		            posX = $p.mouseX;
+		            posY = $p.mouseY;
+
+		            drawColumns();
+		        } else {
+		            //$p.image(img, 0, 0);
+		        }
+		    }
+		    $p.draw = draw;
+		    draw = draw.bind($p);
+
+		    function mouseOver() {
+		        tesselate = true;
+		    }
+		    $p.mouseOver = mouseOver;
+		    mouseOver = mouseOver.bind($p);
+
+		    function mouseOut() {
+		        tesselate = false;
+		    }
+		    $p.mouseOut = mouseOut;
+		    mouseOut = mouseOut.bind($p);
+
+		    function drawColumns() {
+		        for (var ix = 0; ix <= $p.ceil($p.width / rowStep); ix++) {
+		            $p.pushMatrix();
+		            $p.translate(ix * rowStep, -(ix % 2) * (colStep * 0.5));
+		            drawColumn();
+		            $p.popMatrix();
+		        }
+		    }
+		    $p.drawColumns = drawColumns;
+		    drawColumns = drawColumns.bind($p);
+
+		    function drawColumn() {
+		        $p.pushMatrix();
+		        for (var iy = 0; iy <= $p.ceil($p.height / colStep); iy++) {
+		            drawCell();
+		            $p.translate(0, colStep);
+		        }
+		        $p.popMatrix();
+		    }
+		    $p.drawColumn = drawColumn;
+		    drawColumn = drawColumn.bind($p);
+
+		    function drawCell() {
+		        firstPoint = new $p.PVector((CENTER_HEXAGON.x + radius * $p.cos(ANGLE)), (CENTER_HEXAGON.y + radius * $p.sin(ANGLE)));
+
+		        for (var j = 6; j > 0; j--) {
+		            var secondPoint = new $p.PVector((CENTER_HEXAGON.x + radius * $p.cos(ANGLE * j)), (CENTER_HEXAGON.y + radius * $p.sin(ANGLE * j)));
+
+		            $p.beginShape();
+		            $p.scale(-1, 1);
+		            $p.texture(img);
+		            $p.vertex(CENTER_HEXAGON.x, CENTER_HEXAGON.y, posX, posY);
+		            $p.vertex(firstPoint.x, firstPoint.y, posX + radius, posY + radius);
+		            $p.vertex(secondPoint.x, secondPoint.y, posX - radius, posY + radius);
+		            $p.endShape();
+
+		            firstPoint = secondPoint;
+		        }
+		    }
+		    $p.drawCell = drawCell;
+		    drawCell = drawCell.bind($p);
+
+		    function moveCircular() {
+		        circAngle = (circAngle + direction * (($p.TWO_PI / $p.__frameRate) * velocity)) % $p.TWO_PI;
+
+		        var newPostition = new $p.PVector((circleCenter.x + radius * $p.cos(circAngle)), (circleCenter.y + radius * $p.sin(circAngle)));
+		        posX = newPostition.x;
+		        posY = newPostition.y;
+		    }
+		    $p.moveCircular = moveCircular;
+		    moveCircular = moveCircular.bind($p);
+
+		    function keyReleased() {
+		        switch ($p.key) {
+		        case(new $p.Character('m')):
+
+		            break;
+		        case (new $p.Character('n')):
+
+		            break;
+		        case (new $p.Character('+')):
+		            increaseSize();
+		            break;
+		        case (new $p.Character('-')):
+		            decreaseSize();
+		            break;
+		        case (new $p.Character('c')):
+		            move = !move;
+		            break;
+		        case (new $p.Character('v')):
+		            direction = (direction == 1) ? -1 : 1;
+		            break;
+		        case (new $p.Character('y')):
+		            velocity += 0.0125;
+		            if (velocity > MAX_VEL) velocity = MAX_VEL;
+		            break;
+		        case (new $p.Character('x')):
+		            velocity -= 0.0125;
+		            if (velocity < MIN_VEL) velocity = MIN_VEL;
+		            break;
+		        case (new $p.Character('i')):
+		            showImage = !showImage;
+		            break;
+		        case (new $p.Character('d')):
+		            debug = !debug;
+		            break;
+		        case (new $p.Character('t')):
+		            break;
+		        case (new $p.Character('1')):
+		            break;
+		        case (new $p.Character('2')):
+		            break;
+		        case (new $p.Character('3')):
+		            break;
+		        case (new $p.Character('4')):
+		            break;
+		        case (new $p.Character('5')):
+		            break;
+		        case (new $p.Character('6')):
+		            break;
+		        case (new $p.Character('7')):
+		            break;
+		        case (new $p.Character('8')):
+		            break;
+		        default:
+		            break;
+		        }
+		    }
+		    $p.keyReleased = keyReleased;
+		    keyReleased = keyReleased.bind($p);
+
+		    function increaseSize() {
+		        radius *= 2;
+		    }
+		    $p.increaseSize = increaseSize;
+		    increaseSize = increaseSize.bind($p);
+
+		    function decreaseSize() {
+		        radius /= 2;
+		    }
+		    $p.decreaseSize = decreaseSize;
+		    decreaseSize = decreaseSize.bind($p);
+		})
+		var myCanvas = document.getElementById('honeycomb');
+          
+		  new Processing(myCanvas, mySketch);
+          
+		</script>
+	</body>
+</html>
