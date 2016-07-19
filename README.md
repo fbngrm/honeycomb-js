@@ -6,7 +6,7 @@ A bee came in my room today. So I decided to make honeycombs.
 
 #Demo
 
-You can play around with the resulting patterns by moving the cursor and pressing `+` or `-` on your keyboard. To see the debug grid hit `d`. Make sure the browser window has the focus by clicking on the image, otherwise keys won't work.
+You can play around with the resulting patterns by moving the cursor and pressing `+` or `-` on your keyboard. To see the tesselation grid hit `d`. Make sure the browser window has the focus by clicking on the image, otherwise keys won't work. There is also a [small gallery](#pattern-gallery) of 3D'ish Op-Art patterns.
 
 > Be careful if you suffer from Epilepsia!
 
@@ -56,7 +56,7 @@ x += RADIUS * 3
 
 **Vertical Tesselation**
 
-The position on the y-axis is caculated by the square root of half the radius times three (angle bisector in equilateral trianlge).
+The position on the y-axis is caculated by the square root of half the radius times three t (angle bisector in equilateral trianlge).
 
 <img src="source-images/readme/04.png" width="200"></img>
 
@@ -64,7 +64,7 @@ The position on the y-axis is caculated by the square root of half the radius ti
 y += sqrt(3) * (RADIUS / 2)
 ```
 
-**Example Image**
+**Honeycomb Tesselation**
 
 My Gimp skills are not the best so this is not very precise.
 
@@ -108,13 +108,61 @@ My Gimp skills are not the best so this is not very precise.
 
 #Pattern Gallery
 
-<img src="/examples/05.png" width="900"></img>
-
-<img src="/examples/12.png" width="900"></img>
+<img src="/examples/01.png" width="900"></img>
 
 <img src="/examples/02.png" width="900"></img>
 
 <img src="/examples/03.png" width="900"></img>
+
+<img src="/examples/05.png" width="900"></img>
+
+<img src="/examples/06.png" width="900"></img>
+
+<img src="/examples/08.png" width="900"></img>
+
+<img src="/examples/09.png" width="900"></img>
+
+<img src="/examples/12.png" width="900"></img>
+
+<img src="/examples/13.png" width="900"></img>
+
+<img src="/examples/14.png" width="900"></img>
+
+<img src="/examples/15.png" width="900"></img>
+
+<img src="/examples/16.png" width="900"></img>
+
+<img src="/examples/17.png" width="900"></img>
+
+<img src="/examples/14.png" width="900"></img>
+
+<img src="/examples/14.png" width="900"></img>
+
+<img src="/examples/19.png" width="900"></img>
+
+<img src="/examples/20.png" width="900"></img>
+
+<img src="/examples/21.png" width="900"></img>
+
+<img src="/examples/24.png" width="900"></img>
+
+<img src="/examples/27.png" width="900"></img>
+
+<img src="/examples/28.png" width="900"></img>
+
+<img src="/examples/30.png" width="900"></img>
+
+<img src="/examples/32.png" width="900"></img>
+
+<img src="/examples/34.png" width="900"></img>
+
+<img src="/examples/36.png" width="900"></img>
+
+<img src="/examples/37.png" width="900"></img>
+
+<img src="/examples/38.png" width="900"></img>
+
+<img src="/examples/39.png" width="900"></img>
 
 
 
