@@ -8,9 +8,11 @@ A bee came in my room today. So I decided to make honeycombs.
 
 > Be careful if you suffer from Epilepsia!
 
-You can play around with the resulting patterns by moving the cursor and pressing `+` or `-` on your keyboard. To see the tesselation grid hit `d`. Make sure the browser window has the focus by clicking on the image, otherwise keys won't work. There is also a small gallery of 3d'ish op-art patterns.
+You can play around with the resulting patterns by moving the cursor and pressing `+` or `-` on your keyboard. To see the tesselation grid hit `d`. Make sure the browser window has the focus by clicking on the image, otherwise keys won't work. 
 
 Demo: [honeycomb-js](fgrimme.github.com)
+
+There is also a small gallery of 3d'ish op-art patterns.
 
 Gallery: [patterns](#pattern-gallery) 
 
@@ -58,7 +60,7 @@ x += RADIUS * 3
 
 **Vertical Tesselation**
 
-The position on the y-axis is caculated by the square root of half the radius times three t (angle bisector in equilateral trianlge).
+The position on the y-axis is caculated by the square root of half the radius times three (angle bisector in equilateral trianlge).
 
 <img src="source-images/readme/04.png" width="200"></img>
 
@@ -68,7 +70,7 @@ y += sqrt(3) * (RADIUS / 2)
 
 **Honeycomb Tesselation**
 
-My Gimp skills are not the best so this is not very precise.
+This is not very precise ~ my Gimp skills are not the best :-)
 
 <img src="source-images/readme/05.png" width="550"></img>
 
