@@ -6,11 +6,12 @@ A bee came in my room today. So I decided to make honeycombs.
 
 #Demo
 
-You can play around with the resulting patterns by moving the cursor and pressing `+` or `-` on your keyboard. To see the tesselation grid hit `d`. Make sure the browser window has the focus by clicking on the image, otherwise keys won't work. There is also a [small gallery](#pattern-gallery) of 3D'ish Op-Art patterns.
-
 > Be careful if you suffer from Epilepsia!
 
-**Demo:** [honeycomb-js](fgrimme.github.com)
+You can play around with the resulting patterns by moving the cursor and pressing `+` or `-` on your keyboard. To see the tesselation grid hit `d`. Make sure the browser window has the focus by clicking on the image, otherwise keys won't work. There is also a gallery of 3D'ish Op-Art patterns.
+
+Demo: [honeycomb-js](fgrimme.github.com)
+Gallery: [patterns](#pattern-gallery) 
 
 
 #How it works
