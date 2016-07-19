@@ -1,4 +1,4 @@
-#honeycomb-js <img src="imgs/readme/bee.png" ></img>
+#honeycomb-js <img src="source-images/readme/bee.png" ></img>
 
 A bee came in my room today and told me to make honeycombs.
 
@@ -24,13 +24,13 @@ To simulate the Kaleidoscope functionality, a hexagon is created consisting of s
 
 Next, the triangles get rotated by 60° each. To create a symmetrical image the texture is mirrored alternatingly along the x-axis. 
 
-<img src="imgs/readme/01.png" width="200"></img>
+<img src="source-images/readme/01.png" width="200"></img>
 
 
 The coordinates for the triangle rotation can be easily calculated by imagining a surrounding circle. 
 
 
-<img src="imgs/readme/02.png" width="200"></img>
+<img src="source-images/readme/02.png" width="200"></img>
 
 
 ```javascript
@@ -45,7 +45,7 @@ The resulting hexagonal shape is tesselated over the entire canvas. First horizo
 The position on the x-axis is calculated by adding the radius times three to the last position. 
 
 
-<img src="imgs/readme/03.png" width="600"></img>
+<img src="source-images/readme/03.png" width="600"></img>
 
 
 ```javascript
@@ -56,7 +56,7 @@ x += RADIUS * 3
 
 The position on the y-axis is caculated by the square root of three times half the radius (angle bisector in equilateral trianlge).
 
-<img src="imgs/readme/04.png" width="200"></img>
+<img src="source-images/readme/04.png" width="200"></img>
 
 ```javascript
 y += sqrt(3) * (RADIUS / 2)
@@ -66,7 +66,7 @@ y += sqrt(3) * (RADIUS / 2)
 
 My Gimp skills are not the best so this is not very precise.
 
-<img src="imgs/readme/05.png" width="550"></img>
+<img src="source-images/readme/05.png" width="550"></img>
 
 #Keymap
 
