@@ -2,7 +2,7 @@
 
 #honeycomb-js 
 
-A bee came in my room today. So I decided to make honeycombs.
+A bee flew in my room today and I thought about how they make [honeycombs](https://en.wikipedia.org/wiki/Honeycomb). I decided to make some on my own.
 
 #Demo
 
@@ -70,7 +70,7 @@ y += sqrt(3) * (RADIUS / 2)
 
 **Honeycomb Tesselation**
 
-This is not very precise ~ my Gimp skills are not the best :-)
+Not very precise ~ my Gimp skills are not the best :-)
 
 <img src="source-images/readme/05.png" width="550"></img>
 
@@ -118,6 +118,8 @@ This is not very precise ~ my Gimp skills are not the best :-)
 
 <img src="/examples/30.png" width="900"></img>
 
+<img src="/examples/01.gif" width="900"></img>
+
 <img src="/examples/08.png" width="900"></img>
 
 <img src="/examples/09.png" width="900"></img>
@@ -135,6 +137,8 @@ This is not very precise ~ my Gimp skills are not the best :-)
 <img src="/examples/17.png" width="900"></img>
 
 <img src="/examples/05.png" width="900"></img>
+
+<img src="/examples/02.gif" width="900"></img>
 
 <img src="/examples/06.png" width="900"></img>
 
