@@ -6,7 +6,7 @@ A bee flew into my room today and I thought about how they make [honeycombs](htt
 
 #Demo
 
-> Be careful if you suffer from Epilepsia!
+> Be careful if you suffer from epilepsy!
 
 You can play around with the resulting patterns by moving the cursor and pressing `+` or `-` on your keyboard. To see the tesselation grid hit `d`. Make sure the browser window has the focus by clicking on the image, otherwise keys won't work. 
 
@@ -24,7 +24,7 @@ Gallery: [patterns](#pattern-gallery)
 The code is written in Processing first and is then exported to JavaScript. You can find the Java/Processing implementation [here]() and the Android version [here]().
 
 
-To simulate the Kaleidoscope functionality, a hexagon is created consisting of six trianlges as the basic shape. The trianlges are rendered with a texture taken from a reference image. The source area for the texture is controlled by the cursor position. 
+To simulate the Kaleidoscope functionality, a hexagon is created consisting of six triangles as the basic shape. The triangles are rendered with a texture taken from a reference image. The source area for the texture is controlled by the cursor position. 
 
 **Rotation**
 
@@ -60,7 +60,7 @@ x += RADIUS * 3
 
 **Vertical Tesselation**
 
-The position on the y-axis is caculated by the square root of half the radius times three (angle bisector in equilateral trianlge).
+The position on the y-axis is caculated by the square root of half the radius times three (angle bisector in equilateral triangle).
 
 <img src="source-images/readme/04.png" width="200"></img>
 
