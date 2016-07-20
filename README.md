@@ -21,7 +21,7 @@ Gallery: [patterns](#pattern-gallery)
 
 **honeycomb-js** is a implementation of a simple [Kaleidoscope](https://en.wikipedia.org/wiki/Kaleidoscope). It creates symmetric patterns based on an input image. It is a fun project and I use it to create background images for websites. There are some samples in the backgrounds directory.
 
-The code is written in Processing first and is then exported to JavaScript. You can find the Java/Processing implementation [here]() and the Android version [here]().
+The code is written in Processing first and is then exported to JavaScript. You can find the Java/Processing implementation here [honeycomb](https://github.com/fgrimme/honeycomb) and the Android version here [SymDroid](https://github.com/fgrimme/SymDroid).
 
 
 To simulate the Kaleidoscope functionality, a hexagon is created consisting of six triangles as the basic shape. The triangles are rendered with a texture taken from a reference image. The source area for the texture is controlled by the cursor position. 
