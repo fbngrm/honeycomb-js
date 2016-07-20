@@ -35,8 +35,10 @@
 		<script>
 		  var mySketch = (function($p) {
 
+		    var IMAGE = "source-images/03.png"
+
 		    var img = null;
-		    var radius = 200;
+		    var radius = 100;
 		    var ANGLE = $p.TWO_PI / 6;
 		    var CENTER_HEXAGON = new $p.PVector(0, 0);
 		    var firstPoint = null;
@@ -61,7 +63,7 @@
 
 		    function setup() {
 		        $p.size(1920, 1250, $p.OPENGL);
-		        img = $p.loadImage("source-images/07.jpg");
+		        img = $p.loadImage(IMAGE);
 		        $p.noStroke();
 		    }
 		    $p.setup = setup;
