@@ -2,7 +2,7 @@
 
 #honeycomb-js 
 
-A bee flew in my room today and I thought about how they make [honeycombs](https://en.wikipedia.org/wiki/Honeycomb). I decided to make some on my own.
+A bee flew into my room today and I thought about how they make [honeycombs](https://en.wikipedia.org/wiki/Honeycomb). I decided to make some on my own.
 
 #Demo
 
