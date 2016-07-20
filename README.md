@@ -146,7 +146,7 @@ Not very precise ~ my Gimp skills are not the best :-)
 
 <img src="/examples/20.png" width="900"></img>
 
-<img src="/examples/14.gif" width="900"></img>
+<img src="/examples/honeycomb-14.gif" width="900"></img>
 
 <img src="/examples/21.png" width="900"></img>
 
