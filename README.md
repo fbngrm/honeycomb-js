@@ -146,6 +146,8 @@ Not very precise ~ my Gimp skills are not the best :-)
 
 <img src="/examples/20.png" width="900"></img>
 
+<img src="/examples/14.gif" width="900"></img>
+
 <img src="/examples/21.png" width="900"></img>
 
 <img src="/examples/24.png" width="900"></img>
@@ -155,8 +157,6 @@ Not very precise ~ my Gimp skills are not the best :-)
 <img src="/examples/28.png" width="900"></img>
 
 <img src="/examples/32.png" width="900"></img>
-
-<img src="/examples/34.png" width="900"></img>
 
 <img src="/examples/36.png" width="900"></img>
 
