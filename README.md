@@ -107,7 +107,7 @@ Not very precise ~ my Gimp skills are not the best :-)
 | LEFT  | move left           |
 | RIGHT |move right           |
 
-#Pattern Gallery
+# Pattern Gallery
 
 <img src="/examples/01.png" width="900"></img>
 
