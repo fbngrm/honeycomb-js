@@ -1,12 +1,9 @@
 <img src="source-images/readme/bee.png" ></img>
 
-#honeycomb-js 
+# honeycomb-js 
 
-A bee flew into my room today and I thought about how they make [honeycombs](https://en.wikipedia.org/wiki/Honeycomb). I decided to make some on my own.
-
-#Demo
-
-> Be careful if you suffer from epilepsy!
+A bee flew into my room today and I thought about how they make [honeycombs](https://en.wikipedia.org/wiki/Honeycomb).
+# Demo
 
 You can play around with the resulting patterns by moving the cursor and pressing `+` or `-` on your keyboard. To see the tesselation grid hit `d`. Make sure the browser window has the focus by clicking on the image, otherwise keys won't work. 
 
@@ -134,12 +131,6 @@ Not very precise ~ my Gimp skills are not the best :-)
 
 <img src="/examples/16.png" width="900"></img>
 
-<img src="/examples/17.png" width="900"></img>
-
-<img src="/examples/05.png" width="900"></img>
-
-<img src="/examples/02.gif" width="900"></img>
-
 <img src="/examples/06.png" width="900"></img>
 
 <img src="/examples/19.png" width="900"></img>
@@ -151,12 +142,6 @@ Not very precise ~ my Gimp skills are not the best :-)
 <img src="/examples/21.png" width="900"></img>
 
 <img src="/examples/24.png" width="900"></img>
-
-<img src="/examples/27.png" width="900"></img>
-
-<img src="/examples/28.png" width="900"></img>
-
-<img src="/examples/32.png" width="900"></img>
 
 <img src="/examples/36.png" width="900"></img>
 
